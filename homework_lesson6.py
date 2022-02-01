@@ -1,5 +1,7 @@
 # <<<<<<<<<< Task 1 >>>>>>>>>>>>>
-line_sum = sum(1 for line in open('sample.txt'))  # Ask how this line works
+print("<<<<<<<<<< Task 1 >>>>>>>>>>>>>")
+
+line_sum = sum(1 for line in open('sample.txt'))
 
 all_num = 0
 cycle = 1
@@ -22,6 +24,8 @@ while range(0, line_sum):
 print("In file", all_num, "number")
 
 # <<<<<<<<<< Task 2 >>>>>>>>>>>>>
+print("<<<<<<<<<< Task 2 >>>>>>>>>>>>>")
+
 user_num_sum = 0
 user_input = input("Enter searching number: ")
 
@@ -30,7 +34,7 @@ for j in file:
         user_num_sum += 1
 if user_num_sum == 0:
     print("Your num is not searched")
-if user_num_sum > 0:
+elif user_num_sum > 0:
     print("In file", user_num_sum, "your searching num")
 
 
@@ -39,9 +43,13 @@ if user_num_sum > 0:
 # have questions
 
 # <<<<<<<<<< Task 4 >>>>>>>>>>>>>
+print("<<<<<<<<<< Task 4 >>>>>>>>>>>>>")
+
 for q in file:
     with open("sample2.txt", "a") as file2:
         if q.isdigit():
             continue
         else:
             file2.write(q)
+
+print("Complete")
